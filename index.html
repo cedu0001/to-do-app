@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do liste</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="js.js"></script>
+</head>
+<body>
+    <header>
+        <h1>To-do liste</h1>
+        <p>Skriv din task her nedenunder og se den blive tilføjet i den grønne boks</p>
+        <input type="text" name="" id="todo_text">
+        <button class="todo"> add to do</button>
+    </header>
+
+    <main class="flex">
+        <section>
+            <div class="flex">
+            <h2>Igangværende tasks</h2>
+            <p>prioritet</p>
+            </div>
+            <ul class="todo_container"></ul>
+        </section>
+
+         <section>
+            <h2>Færdige tasks</h2>
+            <ul class="done_container"></ul>
+            <p>lille tip:</p>
+            <p>klik igen på -- for at fortryde en færdiggørelse af en task ellers --- for at slette din færdig task</p>
+        </section>
+
+    </main>
+
+    <footer></footer>
+</body>
+</html>
