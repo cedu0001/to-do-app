@@ -10,29 +10,45 @@
 <body>
     <header>
         <h1>To-do liste</h1>
-        <p>Skriv din task her nedenunder og se den blive tilføjet i den grønne boks</p>
-        <input type="text" name="" id="todo_text">
-        <button class="todo"> add to do</button>
+        <h2>Skriv din task her nedenunder og se den blive tilføjet i den grønne boks</h2>
+        <div>
+            <input type="text" id="todo_text" placeholder="køb mælk">
+            <input type="text" id="todo_amount" placeholder="1">
+            <button class="todo">indsend task</button>
+        </div>
+        
     </header>
 
     <main class="flex">
         <section>
             <div class="flex">
-            <h2>Igangværende tasks</h2>
-            <p>prioritet</p>
+                <h2>Igangværende tasks</h2>
+                <p id="p-style">prioritet ★</p>
             </div>
             <ul class="todo_container"></ul>
+          
+            <div class="img-box">
+                <img src="/kontorkat-ny.webp" alt="">
+            </div>
         </section>
 
          <section>
+           
             <h2>Færdige tasks</h2>
+        
             <ul class="done_container"></ul>
-            <p>lille tip:</p>
-            <p>klik igen på -- for at fortryde en færdiggørelse af en task ellers --- for at slette din færdig task</p>
+
+            <div class="img-box">
+                <img src="/kontorkat-ny.webp" alt="">
+            </div>
         </section>
 
     </main>
+    
 
-    <footer></footer>
+    <footer>
+        <p>Lille tip:</p>
+        <p>Klik på "☒" for at flytte opgaven tilbage til "Igangværende tasks". Klik på "<img src="/trashcan.png" alt="" id="trash-img">" for at fjerne opgaven.</p>
+    </footer>
 </body>
 </html>

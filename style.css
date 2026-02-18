@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    list-style: none;
 }
 
 @font-face {
@@ -21,34 +22,150 @@ h1, button{
     font-family: hand-written;
 }
 
-h2, p, input{
+h2, p, input, li, ul{
     font-family: karla;
 }
 
 h1{
-    font-size: 96px;
+    font-size: 64px;
 }
 
-header{
-    margin: 20px
+h2{
+    font-size: 24px;
 }
 
-section{
+p, .amount{
+    font-size: 20px;
+}
+
+header, footer{
+    margin: 20px;
+}
+
+section {
+    width: 550px;
+    border: 2.5px solid #191319;
+    border-radius: 15px;
     padding: 20px;
-    margin: 20px
+    margin: 20px;
 }
 
-section:first-child{
+section:first-child {
+    display: flex;
+    flex-direction: column;
     background-color: #E0F588;
 }
 
-section:last-child{
+section:last-child {
+    display: flex;
+    flex-direction: column;
     background-color: #E4E9D0;
+}
+
+section:last-child div:last-child {
+    margin-top: auto;
+    padding-top: 20px; 
+}
+
+#todo_text{
+    padding: 10px;
+    background: none;
+    font-size: 20px;
+    border: 2.5px solid #191319;
+    border-radius: 15px;
+    margin-top: 5px;
+}
+
+#todo_amount{
+    padding: 10px;
+    background: none;
+    font-size: 20px;
+    border: 2.5px solid #191319;
+    border-radius: 15px;
+    margin-top: 5px;
+    width: 20px;
+}
+
+.todo{
+    margin-top: 5px;
+    padding: 10px;
+    background-color: #F6B6DD;
+    border: 2.5px solid #191319;
+    border-radius: 15px;
+    font-size: 20px;
+}
+
+.todo:hover{
+    background-color: #93296a;
+    color: beige;
+    border: 2.5px solid #191319;
+    cursor: pointer;
+    transition: 0.3s;
 }
 
 .flex{
     display: flex;
-    justify-content: row;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: -25px;
 }
 
+li {
+    display: flex;
+    align-items: center; 
+    gap: 0.5px; 
+    padding: 5px 0px;
+}
+
+
+.trash, .star, .checkbox{
+    cursor: pointer;
+    font-size: 24px;
+    width: 24px;
+    text-align: center;
+}
+
+.line-thru{
+    text-decoration: line-through;
+}
+
+.amount {
+    color: #555;
+    margin-left: 5px;
+}
+
+.img-box {
+    margin-top: auto; /* Skubber billedet til bunden */
+    margin-left: auto; /* Skubber billedet til højre */
+    padding-top: 20px;
+    padding-right: 20px; /* Tilføj lidt padding til højre, så billedet ikke sidder helt op ad kanten */
+}
+
+#trash-img{
+    height: 24px;
+    width: 24px;
+}
+
+.img-box img, #kat {
+    display: block;
+    height: 100px;
+    width: 150px;
+    justify-content: flex-end;
+}
+
+div{
+    font-size: 16px;
+}
+
+#p-style{
+    background-color: #DAB4E5;
+    border: 2.5px solid #191319;
+    border-radius: 15px;
+    padding: 2px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: hand-written;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
 
