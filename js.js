@@ -17,7 +17,7 @@ if(savedTasks){
     showTaskArr(); // Vis de indlæste tasks
 }
 
-//Her laver man en eventlistener, som lytter til når brugeren klikker på knappen, når de kør det så kører funktionen, submitToDo
+//Her laver man en eventlistener, som lytter til når brugeren klikker på knappen, når de gør det så kører funktionen, submitToDo
 todoBtn.addEventListener("click", submitToDo);
 
 
