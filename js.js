@@ -73,7 +73,7 @@ function showTaskArr(){
         doneContainer.appendChild(li);
         li.innerHTML = `
        <p class="checkbox"> ${elm.unchecked ? "☐" : "☒"} </p>
-       <img src="/trashcan.png" alt="" ${elm.trashcan} class="trash">  
+       <img src="/img/delete.webp" alt="" ${elm.trashcan} class="trash">  
        <p class="textelement line-thru">${elm.text} <span class="amount">(${elm.amount})</span></p>
         `;
        }

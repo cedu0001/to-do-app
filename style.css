@@ -6,12 +6,12 @@
 
 @font-face {
 	font-family: hand-written;
-	src: url(/GamjaFlower-Regular.ttf);
+	src: url(/fonts/GamjaFlower-Regular.ttf);
 }
 
 @font-face {
 	font-family: karla;
-	src: url(/Karla-Regular.ttf);
+	src: url(/fonts/Karla-Regular.ttf);
 }
 
 body{
@@ -135,10 +135,10 @@ li {
 }
 
 .img-box {
-    margin-top: auto; /* Skubber billedet til bunden */
-    margin-left: auto; /* Skubber billedet til højre */
+    margin-top: auto; 
+    margin-left: auto; 
     padding-top: 20px;
-    padding-right: 20px; /* Tilføj lidt padding til højre, så billedet ikke sidder helt op ad kanten */
+    padding-right: 20px;
 }
 
 #trash-img{
@@ -146,11 +146,14 @@ li {
     width: 24px;
 }
 
-.img-box img, #kat {
+.img-box img {
     display: block;
-    height: 100px;
     width: 150px;
-    justify-content: flex-end;
+}
+
+#kat{
+    height: 100px;
+    width: 100px;
 }
 
 div{
